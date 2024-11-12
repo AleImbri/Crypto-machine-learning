@@ -1,0 +1,19 @@
+1) Riprovare a usare le combinazioni di iperparametri che hanno terminato l'addestramento della rete non per il raggiungimento della patience, ma a causa di un max_epochs troppo basso (quindi riprovare 1 o poco più di queste combinazioni mettendo una max_epochs quasi irraggiungibile) (vedi ad esempio modello 8_4)
+2) Migliorare quello che ho chiamato "completamento" facendo in modo che non crei una nuova cartella, ma che continui a modificare la stessa precedente in cui si è bloccato
+3) Guardare se è meglio prevedere i giorni futuri usando solo i giorni passati rispetto al presente o utilizzando i giorni passati rispetto a quei giorni futuri, dove i giorni futuri di cui non ho dati vengono calcolati con i modelli migliori che ho già costruito
+4) Riprovare la migliore combinazione trovata con la cartella 10 usando le colonne disordinate della cartella 4, sia per train che per validation che per test
+5) Provare a prevedere tutto insieme il futuro usando "futuro" neuroni di output con un unico modello di reti neurali
+6) Provare a prevedere i prezzi futuri mettendo nel dataset anche più indicatori possibile
+7) Provare a prevedere solo l'andamento (+ o -) del prezzo successivo usando come features vari indicatori di analisi tecnica (SMA, EMA, bande di Bollinger, RSI) 
+
+Strategie da testare:
+1) Strategia Giacomo
+2) Strategia LoC con generalizzazione
+3) Strategia LoC applicata al VA con generalizzazione
+4) Le 4 strategie degli smart trades su YP
+5) DCA
+6) VA
+7) Uso di HMM
+8) Uso dei + e -
+9) VA con obiettivo variabile e/o timeframe variabile, dove magari il timeframe varia in base alle medie mobili o altro
+10) Bollinger bands + RSI
